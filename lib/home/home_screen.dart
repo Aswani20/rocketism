@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rocketism/home/booking/book_tab.dart';
+import 'package:rocketism/home/booking/step3.dart';
 import 'package:rocketism/home/planet_list/planet_list.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -30,8 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {});
           },
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.list), label: "Explore"),
+            BottomNavigationBarItem(icon: Icon(Icons.list), label: "Clue"),
             BottomNavigationBarItem(icon: Icon(Icons.book), label: "Booking"),
+            BottomNavigationBarItem(icon: Icon(Icons.receipt), label: "Record")
           ],
         ),
       ),
@@ -41,5 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> tabs = [
     PlanetList(),
     BookTab(),
+    Step3(),
   ];
 }

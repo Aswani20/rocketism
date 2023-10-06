@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rocketism/home/booking/step3.dart';
 
 class Step2 extends StatelessWidget {
   static const String routeName = 'step2';
@@ -27,11 +26,10 @@ class Step2 extends StatelessWidget {
                   backgroundColor: MaterialStateProperty.all(Colors.red),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushNamed(Step3.routeName);
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text("Next"),
+                  child: Text("Submit"),
                 ),
               ),
             ),

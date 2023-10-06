@@ -8,9 +8,6 @@ class Step3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-      ),
       body: Stack(
         children: [
           Image.asset(

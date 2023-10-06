@@ -18,7 +18,6 @@ class MyTheme {
       elevation: 0,
       selectedItemColor: primaryColor,
       unselectedItemColor: Colors.grey,
-      showUnselectedLabels: false,
     ),
   );
 }
