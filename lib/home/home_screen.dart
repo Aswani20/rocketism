@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {});
           },
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.list), label: "Clue"),
+            BottomNavigationBarItem(icon: Icon(Icons.list), label: "Explore"),
             BottomNavigationBarItem(icon: Icon(Icons.book), label: "Booking"),
           ],
         ),

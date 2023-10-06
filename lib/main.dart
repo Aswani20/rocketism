@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:rocketism/home/booking/step2.dart';
+import 'package:rocketism/home/booking/step3.dart';
 import 'package:rocketism/home/home_screen.dart';
+import 'package:rocketism/home/login_register/login_screen.dart';
+import 'package:rocketism/home/login_register/signup_screen.dart';
 import 'package:rocketism/home/planets_details/earth.dart';
 import 'package:rocketism/home/planets_details/jupiter.dart';
 import 'package:rocketism/home/planets_details/mars.dart';
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Rocketism",
       theme: MyTheme.lightTheme,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SignupScreen.roteName,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
         Mercury.routeName: (context) => Mercury(),
@@ -38,6 +42,10 @@ class MyApp extends StatelessWidget {
         Neptune.routeName: (context) => Neptune(),
         Sun.routeName: (context) => Sun(),
         Moon.routeName: (context) => Moon(),
+        LoginScreen.routeName: (context) => LoginScreen(),
+        Step2.routeName: (context) => Step2(),
+        Step3.routeName: (context) => Step3(),
+        SignupScreen.roteName: (context) => SignupScreen(),
       },
     );
   }
